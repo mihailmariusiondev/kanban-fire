@@ -8,6 +8,8 @@ import { MatCardModule } from '@angular/material/card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { TaskComponent } from './task/task.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,10 @@ import { TaskComponent } from './task/task.component';
     // Material modules
     MatToolbarModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+
+    //Drag and drop module
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
