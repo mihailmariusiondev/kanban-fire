@@ -9,11 +9,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { TaskComponent } from './task/task.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
-
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { TaskDialogComponent } from './task-dialog/task-dialog.component';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    TaskComponent
+    TaskComponent,
+    TaskDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +28,10 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatInputModule,
+    FormsModule,
 
     //Drag and drop module
     DragDropModule
